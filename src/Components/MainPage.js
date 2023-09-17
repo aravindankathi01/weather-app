@@ -30,7 +30,7 @@ const MainPage = () => {
     <div
       className='w-screen h-screen sm:bg-cover flex flex-col items-center pt-32 sm:pt-0 sm:justify-center'
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${hero})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0,0.01), rgba(0, 0, 0,0.01)), url(${hero})`,
       }}>
       <div className='flex flex-col justify-center items-center text-center'>
         <h1 className='text-slate-300 text-6xl font-bold'>Daily weather</h1>
