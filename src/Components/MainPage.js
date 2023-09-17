@@ -18,7 +18,7 @@ const MainPage = () => {
   }, [location]);
   async function fetchSuggestions(location) {
     try {
-      const response = await fetch({ BASE_URL } + "&q=" + { location });
+      const response = await fetch(BASE_URL + "&q=" + location);
       const data = await response.json();
       console.log("forecast", data);
       setSuggestions(data);
