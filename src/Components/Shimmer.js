@@ -4,9 +4,10 @@ import hero from "../assets/bg-image.jpg";
 const Shimmer = () => {
   const myArray = [1, 2, 3, 4];
   const carouselArray = [1, 2, 3, 4, 5];
+  const grid = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
   return (
     <div
-      className='w-screen h-screen bg-cover flex flex-col items-center'
+      className='w-screen h-screen bg-cover flex flex-col items-center gap-10'
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(${hero})`,
       }}>
@@ -23,13 +24,30 @@ const Shimmer = () => {
         ))}
       </div>
       {/* carousel */}
-      <div className='flex flex-row gap-2 pt-20 sm:w-[60vw] w-full justify-center overflow-hidden'>
+      <div className='flex flex-row gap-2 sm:w-[60vw] w-full justify-center overflow-hidden pb-36 sm:pb-0'>
         {carouselArray.map((id, index) => {
           return (
             <div
               key={index}
               className='flex flex-col border rounded-lg h-40 sm:w-28 w-20 items-center justify-center text-center shadow-lg gap-5 animate-pulse'>
               <div class='h-2 bg-slate-700 rounded w-14'></div>
+              <div class='rounded-full bg-slate-700 h-10 w-10'></div>
+              <div class='h-2 bg-slate-700 rounded w-16'></div>
+              <div class='h-2 bg-slate-700 rounded w-10'></div>
+            </div>
+          );
+        })}
+      </div>
+      {/* {forcasts} */}
+      <h1 className='text-2xl font-medium text-white animate-pulse hidden sm:block'>
+        Forecasts
+      </h1>
+      <div className='sm:w-[60vw] w-[90vw] h-min overflow-y-scroll lg:overflow-hidden mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-white gap-2 animate-pulse'>
+        {grid.map((ele, index) => {
+          return (
+            <div
+              key={index}
+              className='border flex flex-row rounded-lg justify-around items-center text-slate-300 p-2'>
               <div class='rounded-full bg-slate-700 h-10 w-10'></div>
               <div class='h-2 bg-slate-700 rounded w-16'></div>
               <div class='h-2 bg-slate-700 rounded w-10'></div>

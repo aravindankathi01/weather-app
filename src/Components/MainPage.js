@@ -28,7 +28,7 @@ const MainPage = () => {
   }
   return (
     <div
-      className='w-screen h-screen sm:bg-cover flex flex-col items-center pt-10 sm:pt-0 sm:justify-center'
+      className='w-screen h-screen sm:bg-cover flex flex-col items-center pt-32 sm:pt-0 sm:justify-center'
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${hero})`,
       }}>
@@ -39,14 +39,14 @@ const MainPage = () => {
         </p>
       </div>
       <div className='flex py-4 gap-2 sm:w-1/2 w-full mx-auto justify-between sm:justify-center'>
-        <div className='flex rounded-full w-full items-center text-white relative border-2'>
+        <div className='flex rounded-full w-full items-center text-white relative border'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             fill='none'
             viewBox='0 0 24 24'
             strokeWidth={1.5}
             stroke='currentColor'
-            className='w-8 h-8'>
+            className='w-8 h-8 p-1'>
             <path
               strokeLinecap='round'
               strokeLinejoin='round'

@@ -11,7 +11,7 @@ const FutureForecasts = ({ futureData }) => {
           const { day, month, weekday } = formatDateToCustomFormat(data.date);
           return (
             <div
-              className='border-2 flex flex-row rounded-lg justify-around items-center text-slate-300'
+              className='border flex flex-row rounded-lg justify-around items-center text-slate-300'
               key={index}>
               <img
                 src={condition.icon}
