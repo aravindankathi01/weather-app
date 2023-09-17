@@ -39,7 +39,7 @@ const SearchResults = () => {
   // }
   return (
     <>
-      {false ? (
+      {currentData ? (
         <div
           className='bg-cover h-screen w-screen pt-10 text-white flex flex-col gap-10 items-center'
           style={{
